@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    font-family: sans-serif;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+nav h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #181818;
+    font-size: 22px;
+}
+
+
+.section1 {
+    width: 100%;
+    height: 40vh;
+    margin-top: 50px;
+}
+
+.section1 h2 {
+    width: 60%;
+    font-family: Playfair Display, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: #444343;
+    margin: auto;
+    text-align: center;
+}
+
+.section1 p {
+    width: 38%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.2rem;
+    font-weight: 100;
+    color: #444343;
+}
+
+.section1 span {
+    color: #181818;
+    font-weight: 600;
+}
+
+
+.section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img1 {
+    position: absolute;
+    object-fit: cover;
+    width: 250px;
+    height: 330px;
+    border-radius: 20px;
+    top: 14%;
+    left: -7.5%;
+}
+
+
+#img2 {
+    position: absolute;
+    object-fit: cover;
+    width: 210px;
+    height: 290px;
+    border-radius: 20px;
+    top: 4%;
+    left: 13%;
+}
+
+#img3 {
+    position: absolute;
+    object-fit: cover;
+    width: 210px;
+    height: 250px;
+    border-radius: 20px;
+    top: 53%;
+    left: 13%;
+}
+
+
+#img4 {
+    position: absolute;
+    object-fit: cover;
+    width: 240px;
+    height: 160px;
+    border-radius: 20px;
+    top: 4%;
+    right: 10.5%;
+}
+
+
+#img5 {
+    position: absolute;
+    object-fit: cover;
+    width: 240px;
+    height: 300px;
+    border-radius: 20px;
+    top: 33%;
+    right: 10.5%;
+}
+
+#img6 {
+    position: absolute;
+    object-fit: cover;
+    width: 265px;
+    height: 350px;
+    border-radius: 20px;
+    top: 15%;
+    right: -11%;
+}
+
+#designer {
+    /* position: absolute; */
+    object-fit: cover;
+    width: 520px;
+    height: 500px;
+    border-radius: 20px;
+    filter: grayscale(1);
+
+}
+
+.text {
+    position: absolute;
+    font-family: Playfair Display, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    color: #e2e0e0c7;
+    bottom: 40%;
+}
+
+
+.section3 {
+    width: 100%;
+    height: 200vh;
+}
+
+
+.section4 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    padding-bottom: 50px;
+}
+
+.section4 .text4 {
+    position: absolute;
+    top: 30%;
+    font-size: 18px;
+    width: 30%;
+    text-align: center;
+    color: #e2e0e0c7;
+    font-family: Playfair Display, sans-serif;
+}
+
+
+.section4 .card {
+    position: absolute;
+    width: 250px;
+    height: 340px;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #18181870;
+}
+
+.card h4 {
+    position: absolute;
+    width: 140%;
+    top: 40%;
+    left: -20%;
+    color: #e2e0e0c7;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: justify;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.card:hover h4 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#card1 {
+    top: -3%;
+    left: 8%;
+    transform: rotateZ(-5deg);
+}
+
+#card2 {
+    top: 30%;
+    left: 9%;
+    transform: rotateZ(8deg);
+}
+
+#card3 {
+    top: -8%;
+    right: 8%;
+    transform: rotateZ(-3deg);
+}
+
+#card4 {
+    top: 27%;
+    right: 9%;
+    transform: rotateZ(5deg);
+}
+
+#card5 {
+    top: -5%;
+    left: 43%;
+    transform: rotateZ(4deg);
+}
+
+#card6 {
+    top: 33%;
+    left: 43%;
+    transform: rotateZ(-5deg);
+}
+
+
+.section5 {
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    padding-left: 40px;
+    gap: 20px;
+}
+
+.left h1 {
+    margin-top: 60px;
+    font-size: 100px;
+    color: #f1f1f1;
+    font-family: Playfair Display, sans-serif;
+    line-height: 6.5rem;
+    font-weight: 500;
+}
+
+.left span {
+    font-weight: 900;
+    color: #f0ecec;
+}
+
+.left .p4 {
+    width: 85%;
+    margin-top: 35px;
+    color: #e2e0e0c7;
+    font-size: 17px;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e2e0e0c7;
+    cursor: pointer;
+    margin-bottom: 22px;
+}
+
+.arrow p {
+    font-size: 18px;
+    letter-spacing: .03rem;
+    font-weight: 100;
+}
+
+.arr {
+    transition: all .4s;
+}
+
+.arrow:hover .arr {
+    transform: translateX(15px);
+}
+
+
+.right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    padding-right: 55px;
+}
+
+
+.right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    background: #181818;
+    background: linear-gradient(to bottom, #181818, transparent 100%);
+    z-index: 9999;
+}
+
+.right::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    background: #181818;
+    background: linear-gradient(to top, #181818, transparent 100%);
+    z-index: 9999;
+}
+
+
+
+.outer {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.img-lf,
+.img-rt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px 0 10px;
+}
+
+.img-lf {
+    transform: translateY(-50%);
+}
+
+.section5 img {
+    border-radius: 15px;
+}
+
+
+
+.section6 {
+    width: 100%;
+    height: 400vh;
+    z-index: -1;
+    background-color: #181818;
+}
+
+.section7 {
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section7 img {
+    width: 100%;
+}
+
+.section7 div {
+    position: absolute;
+    width: 30%;
+    transform: translateY(200%);
+}
+
+.section7 h2 {
+    text-align: center;
+    color: #e2e0e0c7;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.section7 p {
+    color: #e2e0e0c7;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.section8 {
+    width: 100%;
+    height: 200vh;
+    background-color: #181818;
+}
+
+.section9 {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.section9 h2 {
+    margin: 280px auto;
+    line-height: 9rem;
+    font-family: Playfair Display, sans-serif;
+    font-size: 90px;
+    text-align: center;
+    font-size: 500;
+    color: rgb(170, 161, 161);
+    z-index: 2;
+
+}
+
+#img-9-1 {
+    position: absolute;
+    width: 230px;
+    height: 330px;
+    border-radius: 10px;
+    top: 18%;
+    left: 20%;
+    object-fit: cover;
+}
+
+#img-9-2 {
+    position: absolute;
+    width: 230px;
+    height: 330px;
+    border-radius: 10px;
+    top: 27%;
+    right: 20%;
+    object-fit: cover;
+}
+
+#img-9-3 {
+    position: absolute;
+    width: 300px;
+    height: 270px;
+    border-radius: 10px;
+    top: 40%;
+    left: 15%;
+    object-fit: cover;
+}
+
+#img-9-4 {
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+    top: 50%;
+    right: 13%;
+    object-fit: cover;
+}
+
+#img-9-5 {
+    position: absolute;
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+    top: 60%;
+    left: 25%;
+    object-fit: cover;
+}
+
